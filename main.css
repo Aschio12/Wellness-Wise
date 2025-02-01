@@ -2,40 +2,80 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .container{
+    height: auto;
     
+
+}
+body {
+    height: 100vh;
+    margin: 0; 
 }
 #mainBody {
+    background: linear-gradient(to bottom ,black 70%  , rgba(129, 121, 121, 0.5)95%);
     display: flex;
     flex-wrap: wrap; 
     gap: 16px; 
     padding: 20px;
-    
+    height: auto;
 }
 
 .nav{
     width:100%;
-    background: linear-gradient(to right, rgba(90, 241, 229, 0.991) 0%, rgba(0, 0, 0, 0.822) 20%);
+    background: linear-gradient(to top, aqua 0%, rgb(0, 0, 0) 9%);
+    height:7rem;
 }
 .nav .logo{
+    padding:2px;
+    border-radius: 50%;
+    border:2px rgba(90, 241, 229, 0.991) solid;
+    margin-left: 15px;
+    color:white;
     display:inline-block;
+    margin-top: 5px;
     margin-right: 5px;
     font-size:30px;
+    transition: transform 0.3s ease-in-out 0.3s;
 }
-.nav a{
-    padding-left:50px;
+.nav .logo:hover {
+    transform: scale(1.1);
+}
+
+.logo span{
+   transition:color 0.4s ease-in-out 0.5s;
+}
+.logo span:hover{
+    color:aqua;
+}
+.nav a {
+    text-decoration: none;
+    padding-left: 50px;
     font-size: 26px;
-    color:white;
+    color: white;
+    transition: color 0.3s ease-in-out 0.4s;
+}
+
+.nav a:hover {
+    color: aqua;
+     /* Now works correctly */
 }
 .card{
+    color:white;
+    border-radius: 17px;
     margin-left: 40px;
     border:wheat;
     margin-top: 20px;
     overflow: hidden;
     width:520px;
     max-height: auto;
-    background:linear-gradient(to top,rgb(26, 47, 48) 0%,white 10%);
+    background:linear-gradient(to top,aqua 0%,black 6%);
+    transition: transform 0.3s ease-in-out 0.2s;
+}
+
+.card:hover{
+    transform: scale(1.05);
 }
 .card p{
+    padding:16px;
     font-size: 25px;
     line-height: 40px;
     
