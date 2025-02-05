@@ -1,3 +1,7 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 body {
     height: 100vh;
     margin: 0; 
@@ -16,6 +20,7 @@ body {
     flex-wrap: wrap;
     gap: 30px;
     padding-bottom: 20px;
+    background-color: black;
 }
 
 .nav{
@@ -72,19 +77,40 @@ body {
 }
 
 .card {
+    background: linear-gradient(to bottom, black 99%, aqua 100%);
     margin-left: 60px;
     width: 40%;
-    height: 400px;
+    height: auto;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     text-align: center;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    transition: transform 0.6s ease-out 0.1s;
 }
+
+.card:hover { /* Removed the space to target .card itself */
+    transform: scale(1.03);
+}
+
 
 .card img {
     width: 100%;
-    height: fit-content;
+    height: 300px;
+    border-radius:20px ;
+
 }
 
 .card a {
-    text-decoration: none;
+    color: white;
+    margin-top:20px;
+    text-decoration:none;
+    transition: color 0.2s ease-in-out 0.4s;
+    margin-top: 10px;
+}
+.card a:hover{
+    color:aqua;
+}
+.card h3{
+    color:white;
 }
